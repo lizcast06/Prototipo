@@ -1,0 +1,55 @@
+**/Conectar tu repo local con GitHub
+
+**/En tu terminal:
+git remote add origin https://github.com/TU-USUARIO/prototipo-funcional-api-gateway.git
+git branch -M main
+git push -u origin main
+
+**/ Crear un README claro (📄 muy importante)
+
+**/ En Prototipo funcional/README.md pon algo así:
+# Prototipo Funcional con API Gateway
+
+## Descripción
+Este prototipo demuestra una arquitectura basada en **microservicios** con un **API Gateway (Express Gateway)** que actúa como punto de entrada para el frontend.
+
+## Estructura del proyecto
+- **Back-end**
+  - `auth-service/` → microservicio de autenticación.
+  - `pagos-service/` → microservicio de pagos (usado como enrollments).
+  - `api-gateway/` → configuración de Express Gateway.
+  - `database/` → base de datos.
+- **Front-end**
+  - `pagos-frontend/` → cliente web que consume los endpoints del gateway.
+
+## Cómo correr el proyecto
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/TU-USUARIO/prototipo-funcional-api-gateway.git
+   cd prototipo-funcional-api-gateway/Back-end
+
+2. Levanta servicios con Docker:
+  docker-compose up --build
+
+3. El API Gateway quedará disponible en:
+  http://localhost:8080/api/auth/*
+  http://localhost:8080/api/enrollments/*
+
+**/ Seguridad
+
+## El API Gateway incluye validación de tokens JWT para proteger endpoints sensibles.
+
+**/ Autor
+
+## Proyecto realizado por Rey Gasparchu
+
+
+---
+
+### 5. Subir cambios
+Después de crear el README:
+
+```bash
+git add README.md
+git commit -m "Agregar README inicial"
+git push origin main
