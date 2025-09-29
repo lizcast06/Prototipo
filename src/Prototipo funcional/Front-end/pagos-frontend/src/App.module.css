@@ -1,0 +1,56 @@
+/* src/App.module.css */
+.appContainer {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-family: 'Inter', sans-serif;
+}
+
+.navbar {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.navbarBrand {
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.primaryButton {
+  border-radius: 25px;
+  padding: 8px 20px;
+  border: none;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  font-weight: 500;
+}
+
+.outlineButton {
+  border-radius: 25px;
+  padding: 8px 20px;
+  border: 2px solid rgba(255,255,255,0.3);
+  font-weight: 500;
+}
+
+.heroSection {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 60px 40px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.featureCard {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  height: 100%;
+}
+
+.footer {
+  background: rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
