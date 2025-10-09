@@ -1,0 +1,74 @@
+Patrones de diseño GoF
+Patrones Creacionales
+Estos patrones se enfocan en cómo se crean los objetos, proporcionando formas flexibles de instanciarlos sin acoplar el código directamente a las clases concretas.
+Ventajas:
+•	Reducen el acoplamiento entre clases.
+•	Facilitan la reutilización y extensibilidad del código.
+•	Permiten controlar cómo y cuándo se crean los objetos.
+Desventajas:
+•	Aumentan la complejidad del diseño.
+•	Pueden generar muchas clases innecesarias.
+•	Son excesivos si la creación de objetos es sencilla.
+Patrones Estructurales
+Estos patrones explican cómo componer clases y objetos para formar estructuras más grandes y flexibles, favoreciendo la reutilización.
+Ventajas:
+•	Promueven la modularidad y reutilización.
+•	Reducen dependencias directas entre componentes.
+•	Facilitan la integración con sistemas existentes.
+Desventajas:
+•	Pueden hacer el diseño más complejo.
+•	Dificultan la depuración en sistemas grandes.
+•	Riesgo de sobre ingeniería si se usan sin necesidad.
+
+Patrones de Comportamiento
+Estos patrones se centran en cómo los objetos se comunican y cooperan entre sí para cumplir una tarea.
+Ventajas:
+•	Desacoplan la lógica y mejoran la flexibilidad.
+•	Facilitan el mantenimiento y las pruebas.
+•	Organizan mejor el flujo de trabajo entre objetos.
+Desventajas:
+•	Incrementan el número de clases.
+•	Pueden complicar el seguimiento del flujo de ejecución.
+•	Requieren experiencia para aplicarlos correctamente.
+Patrones Emergentes
+Los patrones emergentes son enfoques modernos de diseño de software que surgieron para resolver problemas complejos de arquitectura, organización y mantenimiento del código.
+A diferencia de los patrones GoF, estos se aplican a niveles más altos del diseño, como la estructura general de una aplicación o la comunicación entre capas.
+MVC (Modelo–Vista–Controlador)
+Uso: Aplicaciones web y móviles.
+Conviene aplicarlo cuando: Se busca separar la lógica de negocio, la interfaz y el control para facilitar mantenimiento y pruebas.
+
+DAO (Data Access Object)
+Uso: Sistemas con base de datos.
+Conviene aplicarlo cuando: Se necesita separar la lógica de negocio del acceso a datos, facilitando cambios en la base sin afectar el resto del sistema.
+CQRS (Command Query Responsibility Segregation)
+Uso: Sistemas grandes con alta concurrencia.
+Conviene aplicarlo cuando: Se quiere mejorar el rendimiento separando las operaciones de lectura y escritura.
+
+DDD (Domain Driven Design)
+Uso: Sistemas complejos centrados en reglas de negocio.
+Conviene aplicarlo cuando: Se requiere que el diseño del software refleje fielmente los procesos del dominio empresarial.
+
+MVVM (Modelo–Vista–VistaModelo)
+Uso: Aplicaciones con interfaces dinámicas (como móviles o desktop).
+Conviene aplicarlo cuando: Se busca vincular datos y vistas automáticamente, reduciendo el código repetitivo de la interfaz.
+ANTI PATRONES
+God Object (Objeto Dios)
+Dañino porque: concentra demasiadas funciones en una sola clase, volviéndola difícil de mantener.
+Evitarlo: divide responsabilidades y aplica principios SOLID.
+Spaghetti Code (Código Espagueti)
+Dañino porque: el código se vuelve confuso, con dependencias y saltos lógicos que dificultan su lectura.
+Evitarlo: organiza el código con buenas prácticas, patrones de diseño y refactorización continua.
+ 
+CI/CD (Continuous Integration / Continuous Delivery/Deployment)
+ CI (Integración Continua): Integrar cambios de código frecuentemente y ejecutar pruebas automáticas.
+CD (Entrega Continua): Preparar automáticamente el código para producción; el despliegue final puede ser manual.
+CD (Despliegue Continuo): Desplegar automáticamente cada cambio que pasa las pruebas en producción.
+Herramientas más usadas
+•	GitHub Actions, GitLab CI/CD, Jenkins, CircleCI.
+Beneficios
+•	Detecta errores temprano.
+•	Despliegues rápidos y seguros.
+•	Facilita la colaboración del equipo.
+•	Mejora la calidad del software y reduce riesgos.
+
+
